@@ -1,0 +1,60 @@
+@import "Commons/_colors.sass"
+@import "Commons/_heights.sass"
+@import "Commons/_mixins.sass"
+
+$font-item-desc-price-size: 46px
+$font-item-desc-status-sold-size: 14px
+$font-item-desc-name-size: 24px
+$font-item-desc-title-size: 28px
+$font-item-desc-desc-size: 16px
+
+.item-desc 
+    background-color: $color-background-white
+    border-radius: 4px
+    padding-top: $padding-32
+    padding-left: $padding-32
+    padding-right: $padding-32
+    .image-disp-container
+        overflow: hidden
+        justify-content: center
+        @include xl
+            overflow: hidden
+            width: 680px
+            height: 680px
+            justify-content: center
+    .image-size
+        width: 100%
+        border-radius: 4px
+        height: 100%
+    .item-status-sold
+        color: $color-gray-font
+        font-size: $font-item-desc-status-sold-size
+        margin-bottom: $padding-16
+    .item-name
+        color: $color-black-font
+        font-size: $font-item-desc-name-size
+        margin-bottom: $padding-32
+    .item-price
+        color: $color-black-font
+        font-size: $font-item-desc-price-size
+        margin-bottom: $padding-32
+    .item-desc-title
+        color: $color-black-font
+        font-size: $font-item-desc-title-size
+        margin-bottom: $padding-32
+    .item-desc-text
+        color: $color-gray-font
+        font-size: $font-item-desc-desc-size
+        margin-bottom: $padding-32
+        white-space: pre-line 
+    .col-margin-top-thirty-two
+        margin-top: $padding-32
+
+hr
+    margin-top: 0rem
+    margin-bottom: 0rem
+    border: 0
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+
+li 
+    list-style-type: none

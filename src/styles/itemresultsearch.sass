@@ -1,0 +1,53 @@
+@import "Commons/_colors.sass"
+@import "Commons/_heights.sass"
+
+$font-item-price-size: 24px
+$font-item-desc-size: 18px
+$font-item-loc-size: 12px
+
+.search-result-item 
+    padding: $padding-16
+    background-color: $color-background-white
+    border-radius: 4px
+    .image-disp-container
+        display: block
+        overflow: hidden
+        width: 180px
+        height: 180px
+        justify-content: center
+    .image-size
+        width: 100%
+        border-radius: 4px
+        height: 100%
+    .item-price
+        color: $color-black-font
+        font-size: $font-item-price-size
+        margin: 0px
+        padding-top: 0
+        padding-left: 0
+        padding-right: 0
+        padding-bottom: $padding-32
+    .item-desc
+        color: $color-black-font
+        font-size: $font-item-desc-size
+        padding-top: 0
+        padding-left: 0
+        padding-right: 0
+        padding-bottom: $padding-32
+    .item-location
+        color: $color-gray-font
+        font-size: $font-item-loc-size
+    .col-padds-left-sixteen
+        padding-top: 0
+        padding-left: 16
+        padding-right: 0
+        padding-bottom: 0
+
+hr
+    margin-top: 0rem
+    margin-bottom: 0rem
+    border: 0
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+
+li 
+    list-style-type: none
